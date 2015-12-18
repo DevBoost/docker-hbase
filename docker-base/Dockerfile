@@ -11,5 +11,6 @@ RUN apt-key add archive.key && rm archive.key
 RUN apt-get update
 
 ADD https://github.com/ohjames/smell-baron/releases/download/v0.3.0/smell-baron /usr/bin/smell-baron
+RUN chmod a+x /usr/bin/smell-baron
 
 ENTRYPOINT ["smell-baron"]
