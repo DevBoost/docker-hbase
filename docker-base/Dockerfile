@@ -10,7 +10,7 @@ ADD http://archive.cloudera.com/cdh5/ubuntu/trusty/amd64/cdh/archive.key archive
 RUN apt-key add archive.key && rm archive.key
 RUN apt-get update
 
-ADD https://github.com/ohjames/smell-baron/releases/download/v0.3.0/smell-baron /usr/bin/smell-baron
-RUN chmod a+x /usr/bin/smell-baron
+RUN wget -O /usr/local/bin/dumb-init https://github.com/Yelp/dumb-init/releases/download/v1.0.0/dumb-init_1.0.0_amd64
+RUN chmod +x /usr/local/bin/dumb-init
 
-ENTRYPOINT ["smell-baron"]
+ENTRYPOINT ["dumb-init"]
