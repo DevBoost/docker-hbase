@@ -9,7 +9,7 @@ RUN cp /tmp/phoenix/phoenix-4.6.0-HBase-1.0-server.jar /usr/lib/hbase/lib/
 RUN rm -r /tmp/phoenix/
 RUN rm /tmp/phoenix.tar.gz
 
-CMD hbase master start
+CMD ["hbase", "master", "start"]
 
 EXPOSE 60000
 EXPOSE 60010

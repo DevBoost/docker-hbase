@@ -4,5 +4,5 @@ RUN zookeeper-server-initialize --myid=1
 
 EXPOSE 2181
 
-CMD zookeeper-server start-foreground
+CMD ["zookeeper-server", "start-foreground"]
 

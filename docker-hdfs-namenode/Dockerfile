@@ -9,7 +9,7 @@ ADD hdfs-site.xml /etc/hadoop/conf.final/hdfs-site.xml
 
 RUN hdfs namenode -format
 
-CMD hdfs namenode
+CMD ["hdfs", "namenode"]
 
 EXPOSE 9000
 EXPOSE 50010 50020 50070 50075 50090

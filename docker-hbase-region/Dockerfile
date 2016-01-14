@@ -10,7 +10,7 @@ RUN rm /tmp/phoenix.tar.gz
 
 ADD hbase-site.xml /etc/hbase/conf/hbase-site.xml
 
-CMD hbase regionserver start
+CMD ["hbase", "regionserver", "start"]
 
 EXPOSE 60020
 EXPOSE 60030
