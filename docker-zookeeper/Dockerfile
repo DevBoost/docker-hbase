@@ -1,4 +1,4 @@
-FROM devboost/hadoop-base
+FROM docker-registry.devboost.de/hadoop-base
 RUN apt-get install -y zookeeper-server
 RUN zookeeper-server-initialize --myid=1
 
