@@ -1,4 +1,4 @@
-FROM devboost/hadoop-base
+FROM docker-registry.devboost.de/hadoop-base
 RUN apt-get install -y hadoop-hdfs-datanode
 
 RUN cp -r /etc/hadoop/conf.empty /etc/hadoop/conf.final
