@@ -1,4 +1,4 @@
-FROM devboost/hadoop-base
+FROM docker-registry.devboost.de/hadoop-base
 RUN apt-get install -y hbase-regionserver
 
 ADD http://ftp-stud.hs-esslingen.de/pub/Mirrors/ftp.apache.org/dist/phoenix/phoenix-4.6.0-HBase-1.0/bin/phoenix-4.6.0-HBase-1.0-bin.tar.gz /tmp/phoenix.tar.gz
