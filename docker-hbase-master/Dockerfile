@@ -1,4 +1,4 @@
-FROM devboost/hadoop-base
+FROM docker-registry.devboost.de/hadoop-base
 RUN apt-get install -y hbase-master
 ADD hbase-site.xml /etc/hbase/conf/hbase-site.xml
 
