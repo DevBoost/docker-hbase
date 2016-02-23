@@ -4,6 +4,8 @@ ADD hbase-site.xml /etc/hbase/conf/hbase-site.xml
 
 ADD filter.jar /opt/hbase/lib/filter.jar
 ADD filter.jar /opt/hbase/bin/filter.jar
+ADD filter.jar /usr/lib/hbase/filter.jar
+ADD filter.jar /usr/lib/hbase/lib/filter.jar
 ADD filter.jar /usr/share/java/filter.jar
 
 ENV HBASE_CLASSPATH=/usr/share/java/filter.jar
